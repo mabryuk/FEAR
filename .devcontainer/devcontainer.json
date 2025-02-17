@@ -1,0 +1,54 @@
+{
+	"name": "miniCUDA",
+	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
+
+	"containerEnv": { 
+		"PYTHON_VERSION": "3.11"
+	},
+
+	"features": {
+		"ghcr.io/devcontainers/features/nvidia-cuda:1": {
+			"installCudnn": true,
+			"installCudnnDev": true,
+			"installNvtx": true,
+			"installToolkit": true,
+			"cudaVersion": "12.4",
+			"cudnnVersion": "9.3.0.75"
+		},
+		"ghcr.io/rocker-org/devcontainer-features/miniforge:2": {
+			"version": "latest",
+			"variant": "Miniforge3"
+		}
+	},
+
+	"runArgs": [
+		"--gpus",
+		"all"
+	],
+
+	"remoteUser": "root",
+
+	"postCreateCommand": "chmod +x .devcontainer/scripts/export.sh && bash .devcontainer/scripts/install.sh",
+
+	"customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.autopep8",
+                "fill-labs.dependi",
+                "GitHub.copilot",
+                "GitHub.copilot-chat",
+                "ms-toolsai.jupyter",
+                "ms-toolsai.vscode-jupyter-cell-tags",
+                "ms-toolsai.jupyter-renderers",
+                "ms-toolsai.vscode-jupyter-powertoys",
+                "ms-toolsai.vscode-jupyter-slideshow",
+                "ms-python.vscode-pylance",
+                "ms-python.python",
+                "ms-python.debugpy",
+                "donjayamanne.python-environment-manager",
+                "ms-toolsai.jupyter-keymap",
+                "ms-vscode-remote.vscode-remote-extensionpack"
+            ]
+        }
+    }
+}
