@@ -1,15 +1,6 @@
-# PyTorch CUDA DevContainer Template
+# Facial Emotional Authenticity Recognition
 
-<a href="https://github.com/mabryuk/miniCUDA/generate">
-  <img src="https://img.shields.io/badge/use%20this-template-blue?logo=github">
-</a>
-
-This repository provides a template for setting up a development container (DevContainer) for working with PyTorch on CUDA. This setup ensures a consistent development environment, making it easier to manage dependencies and configurations.
-
-## Features
-
-- [**MiniForge3**](https://github.com/rocker-org/devcontainer-features/tree/main/src/miniforge): A minimal Conda distribution with conda-forge as the default channel.
-- [**CUDA**](https://github.com/devcontainers/features/tree/main/src/nvidia-cuda): Configured to leverage NVIDIA GPUs for deep learning tasks.
+A Deep Learning LSTM model built with PyTorch to distinguish between authentic and fake facial expressions across emotions.
 
 ## Getting Started
 
@@ -81,6 +72,13 @@ This repository provides a template for setting up a development container (DevC
 ## Contributing
 
 Feel free to submit issues or pull requests if you have suggestions for improvements or find any bugs.
+
+## Template
+
+This repo was built using the miniCuda template.
+<a href="https://github.com/mabryuk/miniCUDA/generate">
+  <img src="https://img.shields.io/badge/use%20this-template-blue?logo=github">
+</a>
 
 ## License
 
