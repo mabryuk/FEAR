@@ -1,5 +1,5 @@
 {
-	"name": "miniCUDA",
+	"name": "FEAR",
 	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
 
 	"containerEnv": { 

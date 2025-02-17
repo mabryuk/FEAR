@@ -7,11 +7,9 @@ A Deep Learning LSTM model built with PyTorch to distinguish between authentic a
 ### Prerequisites
 
 - **Docker**: Ensure Docker is installed and running on your machine [from here](https://docs.docker.com/engine/install/) or [here](https://docs.docker.com/desktop/).
-- **Visual Studio Code**: Install [Visual Studio Code](https://code.visualstudio.com/Download) with the [Remote Development extension pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack).
+- **Visual Studio Code**: Install [Visual Studio Code](https://code.visualstudio.com/Download) then the [Remote Development extension pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) for VS Code.
 
 ### Setup
-
-1. **Open** `.devcontainer/devcontainer.json`
 
 1. **Choose python version**:
     ```json
