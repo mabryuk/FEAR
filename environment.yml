@@ -1,0 +1,9 @@
+name: base
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python==3.11.11
+  - conda==23.9.0
+  - mamba[version='>=2.0.6']
+  - pip
