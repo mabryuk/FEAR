@@ -1,9 +1,14 @@
 name: base
 channels:
-  - pytorch
   - conda-forge
 dependencies:
   - python==3.11.11
-  - conda==23.9.0
-  - mamba[version='>=2.0.6']
+  - conda
+  - mamba[version='>=1.5.12']
   - pip
+  - matplotlib
+  - pandas
+  - scikit-learn
+  - seaborn
+  - ipykernel
+  - pytorch-gpu

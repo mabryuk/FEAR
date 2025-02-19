@@ -6,12 +6,6 @@ fi
 echo "conda init"
 conda init bash
 
-echo "conda auto activate base"
-conda config --set auto_activate_base true
-
-echo "adding the pytorch channel"
-conda config --env --add channels pytorch
-
 if [ -e environment.yml ]; then
     echo "installing the conda environment ..."
     conda env update -n base -f environment.yml

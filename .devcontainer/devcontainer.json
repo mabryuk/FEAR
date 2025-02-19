@@ -1,6 +1,6 @@
 {
 	"name": "FEAR",
-	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
+	"image": "condaforge/miniforge3:latest",
 
 	"containerEnv": { 
 		"PYTHON_VERSION": "3.11"
@@ -14,10 +14,6 @@
 			"installToolkit": true,
 			"cudaVersion": "12.4",
 			"cudnnVersion": "9.3.0.75"
-		},
-		"ghcr.io/rocker-org/devcontainer-features/miniforge:2": {
-			"version": "latest",
-			"variant": "Miniforge3"
 		}
 	},
 
